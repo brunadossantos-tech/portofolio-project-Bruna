@@ -44,6 +44,20 @@ p {
   color: #272142;
   font-family: var(-text-font-family);
 }
+.about-section {
+  padding: 160px 20px;
+}
+.about-section-content {
+  margin: 30px;
+}
+.about-section-content h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+.about-section-content h2 {
+  font-size: 18px;
+  font-family: var(--text-font-family);
+}
 .btn-branding {
   background: var(--primary-color);
   color: white;
@@ -69,6 +83,10 @@ p {
   max-width: 100%;
   height: auto;
 }
+.pictures {
+  width: 560px;
+  height: 560px;
+}
 .norway {
   max-width: 100%;
   width: 560px;
@@ -80,7 +98,6 @@ p {
   color: var(--primary-color);
   font-size: 30px;
   padding: 20px;
-  margin: 20px;
 }
 
 @media (max-width: 900px) {
@@ -95,7 +112,12 @@ p {
     font-size: 44px;
     line-height: 2;
   }
-  h2 {
+  .about-section {
+    text-align: center;
+    padding: 0;
+  }
+  .about-section h1 {
     font-size: 44px;
+    line-height: 2;
   }
 }
