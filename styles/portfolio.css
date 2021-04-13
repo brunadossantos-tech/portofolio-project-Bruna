@@ -1,6 +1,7 @@
 :root {
   --default-color: #f9f7fe;
   --primary-color: #ffcab0;
+  --secondary-color: #97cba9;
   --headings-font-family: "Playfair Display", serif;
   --text-font-family: "Poppins", sans-serif;
 }
@@ -15,6 +16,9 @@ h4 {
 }
 h2 {
   font-size: 64px;
+}
+h4 {
+  font-size: 48px;
 }
 p {
   font-family: var(-text-font-family);
@@ -123,15 +127,44 @@ nav li.active a {
   width: 560px;
   height: 560px;
 }
-.icons {
-  display: block;
-  text-align: center;
-  color: var(--primary-color);
-  font-size: 30px;
-  padding: 20px;
+footer {
+  margin: 60px 0;
 }
-
+footer .contact-box {
+  background-color: var(--default-color);
+  padding: 30px 12px;
+  border-radius: 10px;
+}
+footer .contact-box p {
+  margin: 0;
+}
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  font-family: var(--text-font-family);
+  transition: all 100ms ease-in-out;
+}
+footer .email-link:hover {
+  color: var(--primary-color);
+}
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--secondary-color);
+  background-color: var(--default-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 22px;
+  transition: all 100ms ease-in-out;
+}
+footer .social-links a:hover {
+  color: white;
+  background-color: var(--secondary-color);
+}
 @media (max-width: 900px) {
+  h4 {
+    font-size: 26px;
+  }
   .project-description {
     padding: 0;
     text-align: center;
