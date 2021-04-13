@@ -22,6 +22,32 @@ p {
   font-weight: normal;
   line-height: 30px;
 }
+.logo {
+  max-height: 80px;
+}
+nav {
+  padding: 0;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 68px;
+  margin-left: 15px;
+}
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in-out;
+  font-family: var(--text-font-family);
+}
+nav a:hover,
+nav li.active a {
+  color: var(--primary-color);
+}
 
 .hero {
   background: var(--default-color);
@@ -42,7 +68,7 @@ p {
   line-height: 2;
   font-size: 24px;
   color: #272142;
-  font-family: var(-text-font-family);
+  font-family: var(--text-font-family);
 }
 .content-container {
   padding: 160px 20px;
@@ -124,5 +150,8 @@ p {
   .content-container h1 {
     font-size: 44px;
     line-height: 2;
+  }
+  .container {
+    max-width: 720px;
   }
 }
